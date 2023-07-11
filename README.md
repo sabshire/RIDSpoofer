@@ -3,7 +3,7 @@
 An ESP8266/NodeMCU Drone RemoteID Spoofer.
 Built based on work done by 
 * [jjshoots](https://github.com/jjshoots/RemoteIDSpoofer)
-* [sxjack](https://github.com/sxjack/uav_electronic_ids) and 
+* [sxjack](https://github.com/sxjack/uav_electronic_ids)
 * [SpacehuhnTech](https://github.com/SpacehuhnTech/esp8266_deauther).
 
 I stand on the shoulders of giants.

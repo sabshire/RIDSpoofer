@@ -1,15 +1,13 @@
 # RIDS - Remote ID Spoofer
 
 An ESP8266/NodeMCU Drone RemoteID Spoofer.
-Built based on work done by [sxjack](https://github.com/sxjack/uav_electronic_ids) and [SpacehuhnTech](https://github.com/SpacehuhnTech/esp8266_deauther).
+Built based on work done by [jjshoots](https://github.com/jjshoots/RemoteIDSpoofer),[sxjack](https://github.com/sxjack/uav_electronic_ids) and [SpacehuhnTech](https://github.com/SpacehuhnTech/esp8266_deauther).
 I stand on the shoulders of giants.
 
-This spawns 16 different fake drones broadcasting RemoteID, with them all flying in random directions around a particular GPS location.
+This spawns 4 different fake drones broadcasting RemoteID, with them all flying in random directions around a particular GPS location.
 
 Do check that whatever device you're using to detect the drones can sniff packets from the air fast enough.
 If you're using OpenDroneID available on the App Store or Play Store, you'll have to disable scan throttling for your device, and run the app for ~5-10 minutes before all 16 drones are actually "in the air".
-
-<img src="./images/proof.jpg"  width="600">
 
 ## Installation
 
@@ -19,9 +17,11 @@ If you're using OpenDroneID available on the App Store or Play Store, you'll hav
 	- https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json
 4. Now go to `Tools` > `Boards` > `Boards Manager`, search `deauther` and install `Deauther ESP8266 Boards`.
 5. Select your board at `Tools` > `Board` > and be sure it is at `Deauther ESP8266 Boards` (and not at `ESP8266 Modules`).
-6. Plug in your device, I used a NodeMCU v2, and select its COM port at `Tools` > `Port`.
-7. Press `upload`, or use Ctrl+U.
-8. The device should start broadcasting RemoteID packets generated for random flying machines.
+6. Solder GPS to NodeMCU <img src="./images/wiring.png"  width="400">
+7. Install TinyGPSPlus library using Arduino IDE Library Manager
+8. Plug in your device, I used a NodeMCU v2, and select its COM port at `Tools` > `Port`.
+9. Press `upload`, or use Ctrl+U.
+10. The device should start broadcasting RemoteID packets generated for random flying machines.
 
 ## Usage
 

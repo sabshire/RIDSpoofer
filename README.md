@@ -11,7 +11,7 @@ I stand on the shoulders of giants.
 This spawns 4 different fake drones broadcasting RemoteID, with them all flying in random directions around a particular GPS location.
 
 Do check that whatever device you're using to detect the drones can sniff packets from the air fast enough.
-If you're using OpenDroneID available on the App Store or Play Store, you'll have to disable scan throttling for your device, and run the app for ~5-10 minutes before all 16 drones are actually "in the air".
+If you're using OpenDroneID available on the App Store or Play Store, you'll have to disable scan throttling for your device, and run the app for ~5-10 minutes before all drones are actually "in the air".
 
 ## Installation
 
@@ -26,6 +26,20 @@ If you're using OpenDroneID available on the App Store or Play Store, you'll hav
 8. Plug in your device, I used a NodeMCU v2, and select its COM port at `Tools` > `Port`.
 9. Press `upload`, or use Ctrl+U.
 10. The device should start broadcasting RemoteID packets generated for random flying machines.
+
+## Changes from jjroots version
+
+1. Updated the faked operator ID to properly set country of origin to US
+2. Updated to generate fake UAS ID for each drone
+3. Ensures that you have a proper GPS lock (> 7 satellites) before spoofing
+4. Gets time/date from GPS
+5. Limits Altitude to less than 400 feet
+6. Updates pilot location if spoofer is moved
+
+## OpenDroneID App Notes
+
+1. Best performance and results on Android when you disable Wifi Scan Throttling. It will eat your battery though.
+2. Allow plenty of time (5 - 10 minutes) for the applicationt to get a fix on all of the drones
 
 ## Disclaimer
 

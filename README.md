@@ -17,7 +17,7 @@ If you're using OpenDroneID available on the App Store or Play Store, you'll hav
 	- https://raw.githubusercontent.com/SpacehuhnTech/arduino/main/package_spacehuhn_index.json
 4. Now go to `Tools` > `Boards` > `Boards Manager`, search `deauther` and install `Deauther ESP8266 Boards`.
 5. Select your board at `Tools` > `Board` > and be sure it is at `Deauther ESP8266 Boards` (and not at `ESP8266 Modules`).
-6. Solder GPS to NodeMCU <img src="./images/wiring.png"  width="400">
+6. Solder GPS to NodeMCU <br/><img src="./images/wiring.png"  width="400">
 7. Install TinyGPSPlus library using Arduino IDE Library Manager
 8. Plug in your device, I used a NodeMCU v2, and select its COM port at `Tools` > `Port`.
 9. Press `upload`, or use Ctrl+U.

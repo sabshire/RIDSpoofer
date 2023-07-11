@@ -23,14 +23,6 @@ If you're using OpenDroneID available on the App Store or Play Store, you'll hav
 9. Press `upload`, or use Ctrl+U.
 10. The device should start broadcasting RemoteID packets generated for random flying machines.
 
-## Usage
-
-1. After the installation steps, connect to the wireless access point `ESP_RIDS` using the password `makkauhijau` on any device, a smartphone will work well enough.
-2. There, input your own GPS coordinates.
-3. Start spoofing!
-
-> If no GPS coordinates are used within 2 minutes of startup, the device will automatically go into spoofing mode and you will not be able to change the coordinates without a power cycle.
-
 ## Disclaimer
 
 This repository and its code are intended for educational purposes only.

@@ -1,7 +1,6 @@
 
 // ESP8266 RemoteID spoofer
 
-#include "frontend.h"
 #include "spoofer.h"
 #include <TinyGPS++.h> // library for GPS module
 #include <SoftwareSerial.h>
